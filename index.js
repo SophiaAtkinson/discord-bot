@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.once('ready', () => {
     console.log('Ready')
 
-    client.user.setActivity("$help", {
+    client.user.setActivity("!help", {
         type: "STREAMING",
         url: "https://www.twitch.tv/user"
     });
