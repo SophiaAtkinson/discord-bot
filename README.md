@@ -35,4 +35,4 @@ In config.json it says
 for prefix change it to what you want, or keep it default, the prefix is used so the bot knows you are talking to it.
 for the token, you will take the token you see in bot in your app, replace the ! with your token.
 then run the run.cmd and test it out. If it does not work dm on discord Jim Sim#3076
-Thanks for reading through the documentation.
+Thanks for reading through the documentation, sorry for it being long.
