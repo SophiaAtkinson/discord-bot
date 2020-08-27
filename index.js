@@ -12,7 +12,7 @@ client.once('ready', () => {
 })
 client.on('message', message => {
     console.log(message.content);
-    //Help Cmd
+
     if (message.content.startsWith(`${prefix}test`))
         message.channel.send("This test works")
 
