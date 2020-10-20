@@ -16,54 +16,34 @@ client.on('message', message => {
     if (message.content.startsWith(`${prefix}test`))
         message.channel.send("This test works")
     
-            //Kick
+       //ban
+       if (message.content.startsWith(`${prefix}ban`)) {
+        if (!message.guild.member(message.author).hasPermission('BAN_MEMBERS')) { return message.channel.send('You do not have permission to ban users!'); }
+    
+    if (!message.guild.member(client.user).hasPermission('BAN_MEMBERS')) { return message.channel.send('I don\'t have the permission for ban users!'); }
+    
+    if (message.mentions.users.size === 0) { return message.channel.send('You need to mention a user!'); }
+    let banMember = message.guild.member(message.mentions.users.first());
+    if (!banMember) { return message.channel.send('User not found!'); }
+    
+            banMember.ban().then((member) => {
+                message.channel.send(member.displayName + " has been successfully kicked from the server.");
+            })
+        }
+        //kick
         if (message.content.startsWith(`${prefix}kick`)) {
-            const user = message.mentions.users.first();
-            if (user) {
-              const member = message.guild.member(user);
-              if (member) {
-                member
-                  .kick('Optional reason that will display in the audit logs')
-                  .then(() => {
-                    message.reply(`Successfully kicked ${user.tag}`);
-                  })
-                  .catch(err => {
-                    message.reply('I was unable to kick the member');
-                    console.error(err);
-                  });
-              } else {
-                message.reply("That user isn't in this guild!");
-              }
-            } else {
-              message.reply("You didn't mention the user to kick!");
+            if (!message.guild.member(message.author).hasPermission('KICK_MEMBERS')) { return message.channel.send('You do not have permission to kick users!'); }
+        
+        if (!message.guild.member(client.user).hasPermission('KICK_MEMBERS')) { return message.channel.send('I don\'t have the permission for kick users!'); }
+        
+        if (message.mentions.users.size === 0) { return message.channel.send('You need to mention a user!'); }
+        let kickMember = message.guild.member(message.mentions.users.first());
+        if (!kickMember) { return message.channel.send('User not found!'); }
+        
+                kickMember.kick().then((member) => {
+                    message.channel.send(member.displayName + " has been successfully kicked from the server.");
+                })
             }
-          }
-        //Kick End
-        //Ban
-        if (message.content.startsWith(`${prefix}ban`)) {
-            const user = message.mentions.users.first();
-            if (user) {
-              const member = message.guild.member(user);
-              if (member) {
-                member
-                  .ban('Optional reason that will display in the audit logs')
-                  .then(() => {
-                    message.reply(`Successfully Banned ${user.tag}`);
-                  })
-                  .catch(err => {
-                    message.reply('I was unable to Ban the member');
-                    console.error(err);
-                  });
-              } else {
-                message.reply("That user isn't in this guild!");
-              }
-            } else {
-              message.reply("You didn't mention the user to Ban!");
-            }
-          }
-
 })
-
-
 
 client.login(token);
