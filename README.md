@@ -14,10 +14,10 @@ you will need to download node.js, *Download the most recent* [Download](https:/
 and to make your life easier please download Microsoft Visual Studios Code [Download](https://code.visualstudio.com/)
 
 then go ahead and click your windows key and type **cmd** and click enter
-it should open a command prompt, do cd Desktop, then do mkdir code && cd code. then we will make one more folder do mkdir disbot && cd disbot.
-do npm init and click enter for all, it will say is this ok? (yes) just click enter again.
-do **code .** what that will do is open Visual Studios Code.
-Now we will be installing the dependencies, to do this do npm install discord.js --save. if you see warn don't mind it's ok.
+it should open a command prompt, do **CD Desktop**, then do **mkdir code && CD code**. Then we will make one more folder, do **mkdir disbot && CD disbot**.
+do **npm init** and click enter for all, it will say is this ok? (yes) just click enter again.
+do **code.** what that will do is open Visual Studios Code.
+Now we will be installing the dependencies, to do this do **npm install discord.js --save**. if you see warn don't mind it's ok.
 if you check Visual Studios Code there will be a new folder called node_modules, you won't need to mess with anything in there.
 
 Before we go any further I need you to make a bot go to [Dev Portal](https://discord.com/developers/applications) and make a bot
