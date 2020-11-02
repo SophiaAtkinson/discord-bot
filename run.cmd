@@ -1,6 +1,4 @@
 @echo off
-cls
-if not exist node_modules npm i&pause&call %~n0
 :start
 node index.js
 @echo.
