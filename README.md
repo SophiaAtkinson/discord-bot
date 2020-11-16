@@ -6,7 +6,7 @@ it's discord.js
 
 
 
-This is what the bot code can do, it can do simple commands, and it can show status.
+This is what the bot code can do, it can do simple commands, and it can show a status.
 If you want more functionality you can go to [Discord.js Docs](https://discord.js.org) and you can add more.
 
 **If you want to run/use it**
@@ -34,5 +34,5 @@ In config.json it says
 
 for prefix change it to what you want, or keep it default, the prefix is used so the bot knows you are talking to it.
 for the token, you will take the token you see in bot in your app, replace the ! with your token.
-then run the run.cmd and test it out. If it does not work dm on discord Jim Sim#3076
+then run the run.cmd and test it out. If it does not work join my discord server and I can help out https://discord.com/invite/dVhaH8kw5V
 Thanks for reading through the documentation, sorry for it being long.   
