@@ -6,17 +6,20 @@ client.once('ready', () => {
     console.log('Ready')
 
     client.user.setActivity("!help", {
+        //STREAMING,WATCHING,LISTENING,PLAYING
         type: "STREAMING",
+        //Only for streaming ↓
         url: "https://www.twitch.tv/user"
     });
 })
 client.on('message', message => {
-    console.log(message.content);
-
+    //If you want to log every message from every server, remove the // below
+    //console.log(message.content);
+        //prefix you set in config.json ↓
     if (message.content.startsWith(`${prefix}test`))
         message.channel.send("This test works")
     
-       //ban
+       //ban                                 
        if (message.content.startsWith(`${prefix}ban`)) {
         if (!message.guild.member(message.author).hasPermission('BAN_MEMBERS')) { return message.channel.send('You do not have permission to ban users!'); }
     
