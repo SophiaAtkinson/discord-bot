@@ -1,37 +1,38 @@
-## Welcome to GitHub Pages
+# discord-bot
+Discord bot code
 
-You can use the [editor on GitHub](https://github.com/JimSimYT/discord-bot/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This is simple Discord bot code
+it's discord.js
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This is what the bot code can do, it can do simple commands, and it can show a status.
+If you want more functionality you can go to [Discord.js Docs](https://discord.js.org) and you can add more.
 
-```markdown
-Syntax highlighted code block
+**If you want to run/use it**
+you will need to download node.js, *Download the most recent* [Download](https://nodejs.org/en/), and install it.
+and to make your life easier please download Microsoft Visual Studios Code [Download](https://code.visualstudio.com/)
 
-# Header 1
-## Header 2
-### Header 3
+then go ahead and click your windows key and type **cmd** and click enter
+it should open a command prompt, do **CD Desktop**, then do **mkdir code && CD code**. Then we will make one more folder, do **mkdir disbot && CD disbot**.
+do **npm init** and click enter for all, it will say is this ok? (yes) just click enter again.
+do **code.** what that will do is open Visual Studios Code.
+Now we will be installing the dependencies, to do this do **npm install discord.js --save**. if you see warn don't mind it's ok.
+if you check Visual Studios Code there will be a new folder called node_modules, you won't need to mess with anything in there.
 
-- Bulleted
-- List
+Before we go any further I need you to make a bot go to [Dev Portal](https://discord.com/developers/applications) and make a bot
+[Video if you need help](https://youtu.be/NfMkYggLRAs)
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+Now from here, you need to download the index.js and config.json and run.cmd
+and put those in the disbot folder
 
-[Link](url) and ![Image](src)
-```
+**Config**
+In config.json it says 
+    "prefix": "!", "token": "!"
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JimSimYT/discord-bot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+for prefix change it to what you want, or keep it default, the prefix is used so the bot knows you are talking to it.
+for the token, you will take the token you see in bot in your app, replace the ! with your token.
+then run the run.cmd and test it out. If it does not work join my discord server and I can help out https://discord.com/invite/dVhaH8kw5V
+Thanks for reading through the documentation, sorry for it being long.   
