@@ -1,6 +1,3 @@
-# discord-bot
-Discord bot code
-
 This is simple Discord bot code
 it's discord.js
 
