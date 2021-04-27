@@ -7,17 +7,17 @@ it's discord.js
 
 
 This is what the bot code can do, it can do simple commands, and it can show a status.
-If you want more functionality you can go to [Discord.js Docs](https://discord.js.org) and you can add more.
+If you want more functionality you can go to the [Discord.js Docs](https://discord.js.org) and you can add more.
 
 **If you want to run/use it**
 you will need to download node.js, *Download the most recent* [Download](https://nodejs.org/en/), and install it.
 and to make your life easier please download Microsoft Visual Studios Code [Download](https://code.visualstudio.com/)
 
-then go ahead and click your windows key and type **cmd** and click enter
-it should open a command prompt, do **CD Desktop**, then do **mkdir code && CD code**. Then we will make one more folder, do **mkdir disbot && CD disbot**.
+then go ahead and click your windows key and type **cmd** and click enter.
+It should open a command prompt, do **CD Desktop**, then do **mkdir code && CD code**. Then we will make one more folder, do **mkdir disbot && CD disbot**.
 do **npm init** and click enter for all, it will say is this ok? (yes) just click enter again.
 do **code.** what that will do is open Visual Studios Code.
-Now we will be installing the dependencies, to do this do **npm install discord.js --save**. if you see warn don't mind it's ok.
+Now we will be installing the dependencies, to do this do **npm install discord.js**. if you see warn don't mind it's ok.
 if you check Visual Studios Code there will be a new folder called node_modules, you won't need to mess with anything in there.
 
 Before we go any further I need you to make a bot go to [Dev Portal](https://discord.com/developers/applications) and make a bot
@@ -34,5 +34,5 @@ In config.json it says
 
 for prefix change it to what you want, or keep it default, the prefix is used so the bot knows you are talking to it.
 for the token, you will take the token you see in bot in your app, replace the ! with your token.
-then run the run.cmd and test it out. If it does not work join my discord server and I can help out https://discord.com/invite/dVhaH8kw5V
+then run the run.cmd and test it out. If it does not work join my discord server and I can help out https://discord.com/invite/v64BQYNPrQ
 Thanks for reading through the documentation, sorry for it being long.   
